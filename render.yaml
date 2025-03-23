@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: invoice-processor
+    name: invoice-processing-agent
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn src.app:app --host 0.0.0.0 --port $PORT
@@ -9,5 +9,21 @@ services:
         value: 3.11.0
       - key: OPENAI_API_KEY
         sync: false
-      - key: NODE_VERSION
-        value: 18.0.0 
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: SENSO_API_KEY
+        sync: false
+      - key: APIFY_API_KEY
+        sync: false
+      - key: ELEVENLABS_API_KEY
+        sync: false
+      - key: HOST
+        value: 0.0.0.0
+      - key: LOG_LEVEL
+        value: INFO
+      - key: LOG_FILE
+        value: app.log
+      - key: DEBUG
+        value: false
+      - key: ENVIRONMENT
+        value: production 

@@ -1,0 +1,61 @@
+# Version control
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific
+uploads/
+static/audio/
+logs/
+*.log
+*.pdf
+*.mp3
+
+# Environment variables
+.env
+.env.*
+secrets.toml
+.secrets
+secrets/
+config.json
+*_key.json
+*_keys.json
+credentials.json
+token.json
+
+# Local development
+*.db
+*.sqlite3
+.DS_Store 
