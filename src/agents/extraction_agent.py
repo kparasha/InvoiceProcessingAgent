@@ -12,12 +12,11 @@ class ExtractionAgent:
     """Agent responsible for extracting invoice data from text"""
     
     def __init__(self):
-        self.client = OpenAI(
-            api_key=settings.openai_api_key,
-            base_url="https://api.openai.com/v1"  # Explicitly set the base URL
-        )
         if not settings.openai_api_key:
             logger.warning("OpenAI API key not found in settings")
+        
+        # Initialize OpenAI client with minimal configuration
+        self.client = OpenAI()  # It will automatically use OPENAI_API_KEY from environment
         
     def extract_invoice_data(self, text: str) -> dict:
         """Extract invoice data from text using OpenAI"""
