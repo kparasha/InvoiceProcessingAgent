@@ -5,6 +5,7 @@ from datetime import datetime
 from decimal import Decimal
 import json
 import time
+import os
 from typing import List, Optional
 from src.utils.logger import logger
 
@@ -12,11 +13,18 @@ class ExtractionAgent:
     """Agent responsible for extracting invoice data from text"""
     
     def __init__(self):
+        # Set the API key in environment variable
+        os.environ["OPENAI_API_KEY"] = settings.openai_api_key if settings.openai_api_key else ""
+        
         if not settings.openai_api_key:
             logger.warning("OpenAI API key not found in settings")
-        
-        # Initialize OpenAI client with minimal configuration
-        self.client = OpenAI()  # It will automatically use OPENAI_API_KEY from environment
+            
+        try:
+            # Initialize OpenAI client with minimal configuration
+            self.client = OpenAI()
+        except Exception as e:
+            logger.error(f"Failed to initialize OpenAI client: {str(e)}")
+            raise
         
     def extract_invoice_data(self, text: str) -> dict:
         """Extract invoice data from text using OpenAI"""
