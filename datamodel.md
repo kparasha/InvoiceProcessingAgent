@@ -1,19 +1,73 @@
-# Data Model
+# Data Model Documentation
 
-## Invoice
-- **invoice_id**: *UUID* - Unique identifier for the invoice.
-- **vendor_id**: *UUID* - Identifier for the vendor.
-- **invoice_number**: *String* - Invoice number as provided by the vendor.
-- **invoice_date**: *Date* - Date the invoice was issued.
-- **due_date**: *Date* - Payment due date.
-- **total_amount**: *Decimal* - Total amount due.
+## Core Data Structures
 
-## Vendor
-- **vendor_id**: *UUID* - Unique identifier for the vendor.
-- **vendor_name**: *String* - Name of the vendor.
-- **vendor_address**: *String* - Address of the vendor.
-- **contact_email**: *String* - Contact email for the vendor.
+### Invoice Data
+```python
+class Invoice:
+    id: str
+    vendor_info: VendorInfo
+    invoice_details: InvoiceDetails
+    line_items: List[LineItem]
+    totals: InvoiceTotals
+    metadata: DocumentMetadata
+```
 
-## PolicyValidation
-- **validation_id**: *UUID* - Unique identifier for the validation record.
-- **invoice_id**: 
+### Vendor Information
+```python
+class VendorInfo:
+    name: str
+    tax_id: Optional[str]
+    address: str
+    contact: Optional[ContactInfo]
+```
+
+### Invoice Details
+```python
+class InvoiceDetails:
+    invoice_number: str
+    date: datetime
+    due_date: Optional[datetime]
+    terms: Optional[str]
+    po_number: Optional[str]
+```
+
+### Line Items
+```python
+class LineItem:
+    description: str
+    quantity: float
+    unit_price: float
+    amount: float
+    tax: Optional[float]
+```
+
+### Document Metadata
+```python
+class DocumentMetadata:
+    file_name: str
+    file_size: int
+    page_count: int
+    creation_date: datetime
+    modification_date: datetime
+```
+
+## Validation Models
+
+### Validation Result
+```python
+class ValidationResult:
+    is_valid: bool
+    errors: List[ValidationError]
+    warnings: List[ValidationWarning]
+```
+
+### Processing Status
+```python
+class ProcessingStatus:
+    job_id: str
+    status: StatusEnum
+    progress: float
+    message: str
+    timestamp: datetime
+```

@@ -1,49 +1,99 @@
-# System Design
+# System Design Document
 
-## Overview
-The Invoice Processing Agent integrates Apify (scraping), Senso.ai (policy validation), and Gemini (data extraction) to automate high-volume invoice processing with enterprise security and auditability.
+## Architecture Overview
 
-## Architecture
-### Components:
-1. **Apify Web Scraper**
-   - Scrapes structured & unstructured invoices
-   - Extracts key invoice fields (vendor, amount, due date)
-   - Outputs JSON formatted data
+The Invoice Processing Agent implements a multi-agent architecture with specialized components for different aspects of invoice processing.
 
-2. **Gemini AI Processor**
-   - Parses extracted invoice fields
-   - Validates data consistency (e.g., matching totals)
-   - Generates structured summaries for review
+### Core Components
 
-3. **Senso.ai Policy Validator**
-   - Checks invoice terms against vendor policies
-   - Flags violations (e.g., Net-30 violations)
-   - Provides compliance explanations
+1. **Web Server Layer**
+   - FastAPI application server
+   - Request handling and routing
+   - File upload management
+   - Response formatting
 
-4. **Audit & Logging Layer**
-   - Logs data transformations at each stage
-   - Stores policy validation reports
-   - Ensures traceability for debugging
+2. **Agent Layer**
+   - ExtractionAgent: PDF processing and data extraction
+   - ScrapingAgent: Vendor information validation
+   - ComparisonAgent: Data analysis and comparison
+   - ValidationAgent: Data accuracy verification
 
-## Data Flow
-1. Apify scrapes invoice data → JSON
-2. Gemini processes fields → Validated output
-3. Senso.ai checks policies → Policy-compliant report
-4. CI/CD pipeline runs validations before merging
+3. **Service Layer**
+   - PDF processing service
+   - Data validation service
+   - File management service
+   - Logging service
 
-## Technology Stack
-- **Scraping**: Apify (Node.js)
-- **AI Processing**: Gemini (Python API)
-- **Policy Validation**: Senso.ai API
-- **Storage**: PostgreSQL for structured logs
-- **CI/CD**: GitHub Actions for automated testing
+4. **Utility Layer**
+   - Configuration management
+   - Error handling
+   - Data models
+   - Helper functions
 
-## Security Considerations
-- Encrypt vendor PII fields (bank details, addresses)
-- Implement role-based access control (RBAC)
-- Maintain audit logs for compliance tracking
+### Data Flow
 
-## Scalability Plan
-- Use Apify scaling for high-volume scraping
-- Optimize Gemini queries for faster response times
-- Implement caching for frequent policy checks
+1. **Input Processing**
+   - File upload handling
+   - PDF text extraction
+   - Document metadata analysis
+
+2. **Data Extraction**
+   - Text parsing and structuring
+   - Table detection and processing
+   - Key-value pair extraction
+
+3. **Validation Flow**
+   - Data completeness check
+   - Mathematical validation
+   - Business rule verification
+
+4. **Output Generation**
+   - Structured data formatting
+   - Response compilation
+   - Error reporting
+
+### Integration Points
+
+1. **External Services**
+   - OpenAI GPT-4 API
+   - Apify Web Scraping
+   - PDF processing libraries
+
+2. **Storage**
+   - File system for uploads
+   - Temporary data storage
+   - Processing results cache
+
+### Security Considerations
+
+1. **API Security**
+   - API key management
+   - Rate limiting
+   - Input validation
+
+2. **File Security**
+   - Secure file handling
+   - Type validation
+   - Size limitations
+
+3. **Data Protection**
+   - Sensitive data handling
+   - Temporary file cleanup
+   - Access control
+
+### Scalability Design
+
+1. **Performance Optimization**
+   - Asynchronous processing
+   - Efficient resource usage
+   - Caching strategies
+
+2. **Error Handling**
+   - Graceful degradation
+   - Retry mechanisms
+   - Error reporting
+
+3. **Monitoring**
+   - Performance metrics
+   - Error tracking
+   - Usage statistics
