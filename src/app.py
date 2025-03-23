@@ -25,7 +25,10 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-app = FastAPI(title="Invoice Processing System")
+app = FastAPI(
+    title="Invoice Processing Agent",
+    description="API for processing and analyzing invoices",
+)
 
 # Create directories if they don't exist
 os.makedirs("static", exist_ok=True)
