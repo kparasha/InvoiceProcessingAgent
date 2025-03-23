@@ -189,10 +189,31 @@ An intelligent invoice processing system that leverages multiple AI agents to au
 - Apify Scraping
 
 ### Environment Setup
-1. Clone repository
-2. Install dependencies
-3. Configure API keys
-4. Start the server
+1. Clone repository:
+   ```bash
+   git clone https://github.com/yourusername/InvoiceProcessingAgent.git
+   cd InvoiceProcessingAgent
+   ```
+
+2. Create virtual environment and install dependencies:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: .\venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
+
+3. Set up environment variables:
+   ```bash
+   cp .env.template .env
+   # Edit .env file with your actual API keys and configuration
+   ```
+
+4. Start the server:
+   ```bash
+   python -m uvicorn src.app:app --reload --host 0.0.0.0 --port 8000
+   ```
+
+> **Important**: Never commit your `.env` file or any files containing actual API keys. Use `.env.template` as a reference for required environment variables.
 
 ## Contributing
 We welcome contributions! Please see our contributing guidelines for more information.
