@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/kp021/ai-hacks/AI Agents hack @ CloudFlare SF/InvoiceProcessingAgent/venv/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from uvicorn.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())

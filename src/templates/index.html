@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Processing System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <div class="min-h-screen p-6">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-8 text-center text-gray-800">Invoice Processing System</h1>
+            
+            <!-- Upload Form -->
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <form id="uploadForm" class="space-y-4">
+                    <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
+                        <input type="file" id="pdfFile" name="file" accept=".pdf" class="hidden" />
+                        <label for="pdfFile" class="cursor-pointer">
+                            <div class="text-gray-600">
+                                <p>Drag and drop a PDF file here, or click to select</p>
+                                <p class="text-sm text-gray-500 mt-2">Only PDF files are accepted</p>
+                            </div>
+                        </label>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
+                        Process Invoice
+                    </button>
+                </form>
+            </div>
+
+            <!-- Results Section -->
+            <div id="results" class="hidden space-y-6">
+                <!-- Voice Notification -->
+                <div id="voice-notification" class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-4">Voice Notification</h3>
+                    <div class="flex items-center space-x-4">
+                        <audio id="notification-audio" controls class="w-full">
+                            <source id="audio-source" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+
+                <!-- PDF Information -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-2">PDF Information</h3>
+                    <p id="pdf-info" class="text-gray-700"></p>
+                </div>
+
+                <!-- Invoice Details -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-4">Invoice Details</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <p class="text-gray-600">Invoice Number:</p>
+                            <p id="invoice-number" class="font-medium"></p>
+                        </div>
+                        <div>
+                            <p class="text-gray-600">Date:</p>
+                            <p id="invoice-date" class="font-medium"></p>
+                        </div>
+                        <div>
+                            <p class="text-gray-600">Vendor:</p>
+                            <p id="vendor-name" class="font-medium"></p>
+                        </div>
+                        <div>
+                            <p class="text-gray-600">Due Date:</p>
+                            <p id="due-date" class="font-medium"></p>
+                        </div>
+                        <div>
+                            <p class="text-gray-600">Total Amount:</p>
+                            <p id="total-amount" class="font-medium"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Line Items -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-4">Line Items</h3>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full">
+                            <thead>
+                                <tr class="bg-gray-50">
+                                    <th class="px-4 py-2 text-left">Description</th>
+                                    <th class="px-4 py-2 text-right">Quantity</th>
+                                    <th class="px-4 py-2 text-right">Unit Price</th>
+                                    <th class="px-4 py-2 text-right">Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody id="line-items"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Validation Results -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-2">Validation Results</h3>
+                    <div class="flex items-center mb-2">
+                        <span class="text-gray-700">Status:</span>
+                        <span id="validation-status" class="ml-2 px-2 py-1 rounded text-sm"></span>
+                    </div>
+                    <ul id="validation-errors" class="list-disc list-inside text-red-600"></ul>
+                </div>
+
+                <!-- Vendor Information -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-4">Vendor Information</h3>
+                    <div class="space-y-2">
+                        <div>
+                            <span class="text-gray-600">Website:</span>
+                            <a id="vendor-website" href="#" target="_blank" class="text-blue-600 hover:underline ml-2"></a>
+                        </div>
+                        <div>
+                            <span class="text-gray-600">Description:</span>
+                            <p id="vendor-description" class="text-gray-700 mt-1"></p>
+                        </div>
+                        <div>
+                            <span class="text-gray-600">Industry:</span>
+                            <span id="vendor-industry" class="ml-2"></span>
+                        </div>
+                        <div>
+                            <span class="text-gray-600">Founded:</span>
+                            <span id="vendor-founded" class="ml-2"></span>
+                        </div>
+                        <div>
+                            <span class="text-gray-600">Headquarters:</span>
+                            <span id="vendor-headquarters" class="ml-2"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('uploadForm');
+            const fileInput = document.getElementById('pdfFile');
+            const dropZone = document.querySelector('.border-dashed');
+            const resultsSection = document.getElementById('results');
+
+            // Drag and drop handlers
+            dropZone.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                dropZone.classList.add('border-blue-500');
+            });
+
+            dropZone.addEventListener('dragleave', () => {
+                dropZone.classList.remove('border-blue-500');
+            });
+
+            dropZone.addEventListener('drop', (e) => {
+                e.preventDefault();
+                dropZone.classList.remove('border-blue-500');
+                const files = e.dataTransfer.files;
+                if (files.length > 0) {
+                    fileInput.files = files;
+                }
+            });
+
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const file = fileInput.files[0];
+                if (!file) {
+                    alert('Please select a file first');
+                    return;
+                }
+
+                if (!file.name.toLowerCase().endsWith('.pdf')) {
+                    alert('Please upload a PDF file');
+                    return;
+                }
+
+                const formData = new FormData();
+                formData.append('file', file);
+
+                try {
+                    // Show loading state
+                    form.querySelector('button').disabled = true;
+                    form.querySelector('button').textContent = 'Processing...';
+
+                    const response = await fetch('/api/upload-invoice', {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    if (!response.ok) {
+                        const errorData = await response.json();
+                        throw new Error(errorData.detail || 'Failed to process invoice');
+                    }
+
+                    const data = await response.json();
+                    
+                    // Update UI with results
+                    displayResults(data);
+
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert(error.message || 'An error occurred while processing the invoice');
+                } finally {
+                    // Reset form state
+                    form.querySelector('button').disabled = false;
+                    form.querySelector('button').textContent = 'Process Invoice';
+                }
+            });
+
+            function displayResults(data) {
+                const resultsDiv = document.getElementById('results');
+                const voiceNotification = document.getElementById('voice-notification');
+                const notificationAudio = document.getElementById('notification-audio');
+                const audioSource = document.getElementById('audio-source');
+                
+                // Show results section
+                resultsDiv.classList.remove('hidden');
+                
+                // Handle voice notification
+                if (data.audio_url) {
+                    console.log('Audio URL received:', data.audio_url);
+                    voiceNotification.style.display = 'block';
+                    audioSource.src = data.audio_url;
+                    notificationAudio.load();
+                } else {
+                    console.log('No audio URL received');
+                    voiceNotification.style.display = 'none';
+                    audioSource.src = '';
+                    notificationAudio.load();
+                }
+                
+                // Display invoice details
+                if (data.invoice_data) {
+                    document.getElementById('invoice-number').textContent = data.invoice_data.invoice_number || 'N/A';
+                    document.getElementById('invoice-date').textContent = data.invoice_data.date || 'N/A';
+                    document.getElementById('vendor-name').textContent = data.invoice_data.vendor_name || 'N/A';
+                    document.getElementById('total-amount').textContent = `$${data.invoice_data.total_amount}` || 'N/A';
+                    document.getElementById('due-date').textContent = data.invoice_data.due_date || 'N/A';
+
+                    // Update line items
+                    const lineItemsContainer = document.getElementById('line-items');
+                    lineItemsContainer.innerHTML = '';
+                    if (data.invoice_data.line_items && data.invoice_data.line_items.length > 0) {
+                        data.invoice_data.line_items.forEach(item => {
+                            const row = document.createElement('tr');
+                            row.innerHTML = `
+                                <td class="px-4 py-2 border">${item.description}</td>
+                                <td class="px-4 py-2 border text-right">1</td>
+                                <td class="px-4 py-2 border text-right">$${item.amount}</td>
+                                <td class="px-4 py-2 border text-right">$${item.amount}</td>
+                            `;
+                            lineItemsContainer.appendChild(row);
+                        });
+                    } else {
+                        lineItemsContainer.innerHTML = '<tr><td colspan="4" class="px-4 py-2 border text-center">No line items found</td></tr>';
+                    }
+                }
+                
+                // Display validation results
+                if (data.validation_result) {
+                    const validationStatus = document.getElementById('validation-status');
+                    const validationErrors = document.getElementById('validation-errors');
+                    
+                    validationStatus.textContent = data.validation_result.is_valid ? 'Valid' : 'Invalid';
+                    validationStatus.className = data.validation_result.is_valid ? 'text-green-600 font-semibold' : 'text-red-600 font-semibold';
+                    
+                    if (data.validation_result.errors && data.validation_result.errors.length > 0) {
+                        validationErrors.textContent = data.validation_result.errors.join('\n');
+                        validationErrors.classList.remove('hidden');
+                    } else {
+                        validationErrors.classList.add('hidden');
+                    }
+                }
+                
+                // Display vendor information
+                if (data.vendor_info) {
+                    document.getElementById('vendor-website').href = data.vendor_info.website || '#';
+                    document.getElementById('vendor-website').textContent = data.vendor_info.website || 'N/A';
+                    document.getElementById('vendor-description').textContent = data.vendor_info.description || 'N/A';
+                    document.getElementById('vendor-industry').textContent = data.vendor_info.industry || 'N/A';
+                    document.getElementById('vendor-founded').textContent = data.vendor_info.founded || 'N/A';
+                    document.getElementById('vendor-headquarters').textContent = data.vendor_info.headquarters || 'N/A';
+                }
+            }
+        });
+    </script>
+</body>
+</html> 

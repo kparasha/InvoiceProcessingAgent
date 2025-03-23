@@ -1,0 +1,333 @@
+2025-03-22 16:33:58,026 - invoice_processing - INFO - Starting invoice data extraction
+2025-03-22 16:33:58,027 - invoice_processing - INFO - Found invoice number: INV-20250322_161831
+2025-03-22 16:33:58,028 - invoice_processing - INFO - Found invoice date: 2025-03-22 00:00:00
+2025-03-22 16:33:58,028 - invoice_processing - INFO - Found vendor name: To:
+2025-03-22 16:33:58,029 - invoice_processing - INFO - Found due date: 2025-04-21 00:00:00
+2025-03-22 16:33:58,029 - invoice_processing - INFO - Found total amount: $23650.0
+2025-03-22 16:33:58,029 - invoice_processing - INFO - Successfully extracted invoice data with 0 line items
+2025-03-22 16:36:27,033 - invoice_processing - INFO - Starting invoice data extraction
+2025-03-22 16:36:27,034 - invoice_processing - INFO - Found invoice number: INV-20250322_163620
+2025-03-22 16:36:27,035 - invoice_processing - INFO - Found invoice date: 2025-03-22 00:00:00
+2025-03-22 16:36:27,035 - invoice_processing - INFO - Found vendor name: To:
+2025-03-22 16:36:27,036 - invoice_processing - INFO - Found due date: 2025-04-21 00:00:00
+2025-03-22 16:36:27,036 - invoice_processing - INFO - Found total amount: $23650.0
+2025-03-22 16:36:27,036 - invoice_processing - INFO - Successfully extracted invoice data with 0 line items
+2025-03-22 16:37:04,896 - invoice_processing - INFO - Starting invoice data extraction
+2025-03-22 16:37:04,896 - invoice_processing - INFO - Found invoice number: INV-20250322_163620
+2025-03-22 16:37:04,898 - invoice_processing - INFO - Found invoice date: 2025-03-22 00:00:00
+2025-03-22 16:37:04,898 - invoice_processing - INFO - Found vendor name: To:
+2025-03-22 16:37:04,898 - invoice_processing - INFO - Found due date: 2025-04-21 00:00:00
+2025-03-22 16:37:04,898 - invoice_processing - INFO - Found total amount: $23650.0
+2025-03-22 16:37:04,898 - invoice_processing - INFO - Successfully extracted invoice data with 0 line items
+2025-03-22 16:37:04,898 - invoice_processing - INFO - Fetching vendor information for: To:
+2025-03-22 16:37:04,898 - invoice_processing - WARNING - No vendor information found for To:
+2025-03-22 16:37:39,660 - invoice_processing - INFO - Starting invoice data extraction
+2025-03-22 16:37:39,660 - invoice_processing - INFO - Found invoice number: INV-20250322_163733
+2025-03-22 16:37:39,662 - invoice_processing - INFO - Found invoice date: 2025-03-22 00:00:00
+2025-03-22 16:37:39,662 - invoice_processing - INFO - Found vendor name: To:
+2025-03-22 16:37:39,662 - invoice_processing - INFO - Found due date: 2025-04-21 00:00:00
+2025-03-22 16:37:39,662 - invoice_processing - INFO - Found total amount: $23650.0
+2025-03-22 16:37:39,662 - invoice_processing - INFO - Successfully extracted invoice data with 0 line items
+2025-03-22 16:37:39,662 - invoice_processing - INFO - Fetching vendor information for: To:
+2025-03-22 16:37:39,662 - invoice_processing - WARNING - No vendor information found for To:
+2025-03-22 16:38:55,428 - invoice_processing - INFO - Starting invoice data extraction
+2025-03-22 16:38:55,428 - invoice_processing - INFO - Found invoice number: INV-20250322_163733
+2025-03-22 16:38:55,429 - invoice_processing - INFO - Found invoice date: 2025-03-22 00:00:00
+2025-03-22 16:38:55,429 - invoice_processing - INFO - Found due date: 2025-04-21 00:00:00
+2025-03-22 16:38:55,429 - invoice_processing - INFO - Found line items table header
+2025-03-22 16:38:55,429 - invoice_processing - INFO - Found total amount: $23650.0
+2025-03-22 16:38:55,429 - invoice_processing - WARNING - Total amount mismatch: stated $23650.0 vs calculated $21500.0
+2025-03-22 16:38:55,429 - invoice_processing - INFO - Successfully extracted invoice data with 3 line items
+2025-03-22 16:38:55,429 - invoice_processing - INFO - Fetching vendor information for: Cloudflare Inc.
+2025-03-22 16:38:55,429 - invoice_processing - INFO - Found vendor information for Cloudflare Inc.
+2025-03-22 16:39:49,914 - invoice_processing - INFO - Starting invoice data extraction
+2025-03-22 16:39:49,914 - invoice_processing - INFO - Found invoice number: INV-20250322_163733
+2025-03-22 16:39:49,915 - invoice_processing - INFO - Found invoice date: 2025-03-22 00:00:00
+2025-03-22 16:39:49,915 - invoice_processing - INFO - Found due date: 2025-04-21 00:00:00
+2025-03-22 16:39:49,915 - invoice_processing - INFO - Found line items table header
+2025-03-22 16:39:49,915 - invoice_processing - INFO - Found total amount: $23650.0
+2025-03-22 16:39:49,915 - invoice_processing - WARNING - Total amount mismatch: stated $23650.0 vs calculated $21500.0
+2025-03-22 16:39:49,915 - invoice_processing - INFO - Successfully extracted invoice data with 3 line items
+2025-03-22 16:39:49,915 - invoice_processing - INFO - Starting validation for invoice INV-20250322_163733
+2025-03-22 16:39:49,915 - invoice_processing - INFO - Validation completed for invoice INV-20250322_163733. Valid: True
+2025-03-22 16:39:49,915 - invoice_processing - INFO - Fetching vendor information for: Cloudflare Inc.
+2025-03-22 16:39:49,915 - invoice_processing - INFO - Found vendor information for Cloudflare Inc.
+2025-03-22 16:41:28,354 - invoice_processing - INFO - Starting invoice data extraction
+2025-03-22 16:41:28,354 - invoice_processing - INFO - Found invoice number: INV-20250322_163733
+2025-03-22 16:41:28,354 - invoice_processing - INFO - Found invoice date: 2025-03-22 00:00:00
+2025-03-22 16:41:28,354 - invoice_processing - INFO - Found due date: 2025-04-21 00:00:00
+2025-03-22 16:41:28,354 - invoice_processing - INFO - Found line items table header
+2025-03-22 16:41:28,354 - invoice_processing - INFO - Found total amount: $23650.0
+2025-03-22 16:41:28,354 - invoice_processing - WARNING - Total amount mismatch: stated $23650.0 vs calculated $21500.0
+2025-03-22 16:41:28,354 - invoice_processing - INFO - Successfully extracted invoice data with 3 line items
+2025-03-22 16:41:28,354 - invoice_processing - INFO - Starting validation for invoice INV-20250322_163733
+2025-03-22 16:41:28,354 - invoice_processing - INFO - Validation completed for invoice INV-20250322_163733. Valid: True
+2025-03-22 16:41:28,354 - invoice_processing - INFO - Fetching vendor information for: Cloudflare Inc.
+2025-03-22 16:41:28,354 - invoice_processing - INFO - Found vendor information for Cloudflare Inc.
+2025-03-22 16:44:19,137 - invoice_processing - INFO - Starting invoice data extraction
+2025-03-22 16:44:19,137 - invoice_processing - INFO - Found invoice number: INV-20250322_163733
+2025-03-22 16:44:19,139 - invoice_processing - INFO - Found invoice date: 2025-03-22 00:00:00
+2025-03-22 16:44:19,139 - invoice_processing - INFO - Found due date: 2025-04-21 00:00:00
+2025-03-22 16:44:19,139 - invoice_processing - INFO - Found line items table header
+2025-03-22 16:44:19,139 - invoice_processing - INFO - Found total amount: $23650.0
+2025-03-22 16:44:19,139 - invoice_processing - WARNING - Total amount mismatch: stated $23650.0 vs calculated $21500.0
+2025-03-22 16:44:19,139 - invoice_processing - INFO - Successfully extracted invoice data with 3 line items
+2025-03-22 16:44:19,139 - invoice_processing - INFO - Starting validation for invoice INV-20250322_163733
+2025-03-22 16:44:19,139 - invoice_processing - INFO - Validation completed for invoice INV-20250322_163733. Valid: True
+2025-03-22 16:44:19,139 - invoice_processing - INFO - Fetching vendor information for: Cloudflare Inc.
+2025-03-22 16:44:19,139 - invoice_processing - INFO - Found vendor information for Cloudflare Inc.
+2025-03-22 17:17:20,680 - src.app - ERROR - Error processing invoice: [Errno 17] File exists: 'uploads/mock_invoice_20250322_163733_cloudflare.pdf'
+2025-03-22 17:18:09,638 - src.app - ERROR - Error processing invoice: [Errno 17] File exists: 'uploads/mock_invoice_20250322_163733_cloudflare.pdf'
+2025-03-22 17:18:54,096 - src.app - ERROR - Error processing invoice: [Errno 17] File exists: 'uploads/20250322_171854_3d43e231_mock_invoice_20250322_163733_cloudflare.pdf'
+2025-03-22 17:20:13,810 - src.app - ERROR - Error processing invoice: [Errno 17] File exists: 'uploads/20250322_172013_6a3b4f2d_mock_invoice_20250322_163733_cloudflare.pdf'
+2025-03-22 17:22:25,812 - src.app - INFO - Cleaned up file: uploads/20250322_172225_cc4e7d14_mock_invoice_20250322_163733_cloudflare.pdf
+2025-03-22 17:22:25,813 - src.app - ERROR - Error processing invoice: [Errno 17] File exists: 'uploads/20250322_172225_cc4e7d14_mock_invoice_20250322_163733_cloudflare.pdf'
+Traceback (most recent call last):
+  File "/Users/kp021/ai-hacks/AI Agents hack @ CloudFlare SF/InvoiceProcessingAgent/src/app.py", line 73, in upload_invoice
+    pdf_processor = PDFProcessor(file_path)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kp021/ai-hacks/AI Agents hack @ CloudFlare SF/InvoiceProcessingAgent/src/utils/pdf_processor.py", line 10, in __init__
+    self.upload_dir.mkdir(parents=True, exist_ok=True)
+  File "/Users/kp021/.pyenv/versions/3.11.9/lib/python3.11/pathlib.py", line 1116, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: 'uploads/20250322_172225_cc4e7d14_mock_invoice_20250322_163733_cloudflare.pdf'
+2025-03-22 17:23:24,677 - src.app - INFO - Cleaned up file: uploads/20250322_172324_fab924df_mock_invoice_20250322_163733_cloudflare.pdf
+2025-03-22 17:23:24,678 - src.app - ERROR - Error processing invoice: [Errno 17] File exists: 'uploads/20250322_172324_fab924df_mock_invoice_20250322_163733_cloudflare.pdf'
+Traceback (most recent call last):
+  File "/Users/kp021/ai-hacks/AI Agents hack @ CloudFlare SF/InvoiceProcessingAgent/src/app.py", line 73, in upload_invoice
+    pdf_processor = PDFProcessor(file_path)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kp021/ai-hacks/AI Agents hack @ CloudFlare SF/InvoiceProcessingAgent/src/utils/pdf_processor.py", line 10, in __init__
+    self.upload_dir.mkdir(parents=True, exist_ok=True)
+  File "/Users/kp021/.pyenv/versions/3.11.9/lib/python3.11/pathlib.py", line 1116, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: 'uploads/20250322_172324_fab924df_mock_invoice_20250322_163733_cloudflare.pdf'
+2025-03-22 17:24:57,813 - invoice_processing - INFO - Starting invoice data extraction
+2025-03-22 17:24:57,813 - invoice_processing - INFO - Found invoice number: INV-20250322_163733
+2025-03-22 17:24:57,815 - invoice_processing - INFO - Found invoice date: 2025-03-22 00:00:00
+2025-03-22 17:24:57,815 - invoice_processing - INFO - Found due date: 2025-04-21 00:00:00
+2025-03-22 17:24:57,815 - invoice_processing - INFO - Found line items table header
+2025-03-22 17:24:57,815 - invoice_processing - INFO - Found total amount: $23650.0
+2025-03-22 17:24:57,815 - invoice_processing - WARNING - Total amount mismatch: stated $23650.0 vs calculated $21500.0
+2025-03-22 17:24:57,815 - invoice_processing - INFO - Successfully extracted invoice data with 3 line items
+2025-03-22 17:24:57,815 - src.app - INFO - Extracted invoice data: {'invoice_number': 'INV-20250322_163733', 'date': '2025-03-22', 'vendor_name': 'Cloudflare Inc.', 'total_amount': '23650.0', 'due_date': '2025-04-21', 'line_items': [{'description': 'Consulting Services', 'amount': '6000.0'}, {'description': 'Software Development', 'amount': '12000.0'}, {'description': 'Project Management', 'amount': '3500.0'}]}
+2025-03-22 17:24:57,815 - src.app - ERROR - Error processing invoice: 'dict' object has no attribute 'invoice_number'
+Traceback (most recent call last):
+  File "/Users/kp021/ai-hacks/AI Agents hack @ CloudFlare SF/InvoiceProcessingAgent/src/app.py", line 92, in upload_invoice
+    validation_result = validation_agent.validate_invoice(invoice_data)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kp021/ai-hacks/AI Agents hack @ CloudFlare SF/InvoiceProcessingAgent/src/agents/validation_agent.py", line 22, in validate_invoice
+    logger.info(f"Starting validation for invoice {invoice.invoice_number}")
+                                                   ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'invoice_number'
+2025-03-22 17:24:57,816 - src.app - INFO - Cleaned up file: uploads/20250322_172457_3b5af578_mock_invoice_20250322_163733_cloudflare.pdf
+2025-03-22 17:26:29,904 - invoice_processing - INFO - Starting invoice data extraction
+2025-03-22 17:26:29,904 - invoice_processing - INFO - Found invoice number: INV-20250322_163733
+2025-03-22 17:26:29,906 - invoice_processing - INFO - Found invoice date: 2025-03-22 00:00:00
+2025-03-22 17:26:29,906 - invoice_processing - INFO - Found due date: 2025-04-21 00:00:00
+2025-03-22 17:26:29,906 - invoice_processing - INFO - Found line items table header
+2025-03-22 17:26:29,906 - invoice_processing - INFO - Found total amount: $23650.0
+2025-03-22 17:26:29,906 - invoice_processing - WARNING - Total amount mismatch: stated $23650.0 vs calculated $21500.0
+2025-03-22 17:26:29,906 - invoice_processing - INFO - Successfully extracted invoice data with 3 line items
+2025-03-22 17:26:29,906 - src.app - INFO - Extracted invoice data: {'invoice_number': 'INV-20250322_163733', 'date': '2025-03-22', 'vendor_name': 'Cloudflare Inc.', 'total_amount': '23650.0', 'due_date': '2025-04-21', 'line_items': [{'description': 'Consulting Services', 'amount': '6000.0'}, {'description': 'Software Development', 'amount': '12000.0'}, {'description': 'Project Management', 'amount': '3500.0'}]}
+2025-03-22 17:26:29,906 - invoice_processing - INFO - Starting validation for invoice INV-20250322_163733
+2025-03-22 17:26:29,906 - invoice_processing - WARNING - Total amount mismatch: line items 21500.0 vs stated 23650.0
+2025-03-22 17:26:29,906 - invoice_processing - INFO - Validation completed. Valid: False
+2025-03-22 17:26:29,906 - invoice_processing - WARNING - Validation errors: ['Line items total (21500.0) does not match invoice total (23650.0)']
+2025-03-22 17:26:29,906 - src.app - INFO - Validation result: {'is_valid': False, 'errors': ['Line items total (21500.0) does not match invoice total (23650.0)']}
+2025-03-22 17:26:29,906 - invoice_processing - INFO - Fetching vendor information for: Cloudflare Inc.
+2025-03-22 17:26:29,906 - invoice_processing - INFO - Found vendor information for Cloudflare Inc.
+2025-03-22 17:26:29,906 - src.app - INFO - Vendor information: {'company': 'Cloudflare Inc.', 'website': 'https://www.cloudflare.com', 'description': 'Cloudflare, Inc. is a global cloud services provider offering content delivery network services, DDoS mitigation, Internet security, and distributed domain name server services.', 'social_links': ['https://twitter.com/cloudflare', 'https://www.linkedin.com/company/cloudflare'], 'industry': 'Internet Infrastructure & Security', 'founded': '2009', 'headquarters': 'San Francisco, California'}
+2025-03-22 17:26:29,906 - src.app - INFO - Cleaned up file: uploads/20250322_172629_7fde885f_mock_invoice_20250322_163733_cloudflare.pdf
+2025-03-22 17:27:48,943 - invoice_processing - INFO - Starting invoice data extraction
+2025-03-22 17:27:48,944 - invoice_processing - INFO - Found invoice number: INV-20250322_163733
+2025-03-22 17:27:48,946 - invoice_processing - INFO - Found invoice date: 2025-03-22 00:00:00
+2025-03-22 17:27:48,946 - invoice_processing - INFO - Found due date: 2025-04-21 00:00:00
+2025-03-22 17:27:48,946 - invoice_processing - INFO - Found line items table header
+2025-03-22 17:27:48,947 - invoice_processing - INFO - Found total amount: $23650.0
+2025-03-22 17:27:48,947 - invoice_processing - WARNING - Total amount mismatch: stated $23650.0 vs calculated $21500.0
+2025-03-22 17:27:48,947 - invoice_processing - INFO - Successfully extracted invoice data with 3 line items
+2025-03-22 17:27:48,947 - src.app - INFO - Extracted invoice data: {'invoice_number': 'INV-20250322_163733', 'date': '2025-03-22', 'vendor_name': 'Cloudflare Inc.', 'total_amount': '23650.0', 'due_date': '2025-04-21', 'line_items': [{'description': 'Consulting Services', 'amount': '6000.0'}, {'description': 'Software Development', 'amount': '12000.0'}, {'description': 'Project Management', 'amount': '3500.0'}]}
+2025-03-22 17:27:48,947 - invoice_processing - INFO - Starting validation for invoice INV-20250322_163733
+2025-03-22 17:27:48,947 - invoice_processing - WARNING - Total amount mismatch: line items 21500.0 vs stated 23650.0
+2025-03-22 17:27:48,947 - invoice_processing - INFO - Validation completed. Valid: False
+2025-03-22 17:27:48,947 - invoice_processing - WARNING - Validation errors: ['Line items total (21500.0) does not match invoice total (23650.0)']
+2025-03-22 17:27:48,947 - src.app - INFO - Validation result: {'is_valid': False, 'errors': ['Line items total (21500.0) does not match invoice total (23650.0)']}
+2025-03-22 17:27:48,948 - invoice_processing - INFO - Fetching vendor information for: Cloudflare Inc.
+2025-03-22 17:27:48,948 - invoice_processing - INFO - Found vendor information for Cloudflare Inc.
+2025-03-22 17:27:48,948 - src.app - INFO - Vendor information: {'company': 'Cloudflare Inc.', 'website': 'https://www.cloudflare.com', 'description': 'Cloudflare, Inc. is a global cloud services provider offering content delivery network services, DDoS mitigation, Internet security, and distributed domain name server services.', 'social_links': ['https://twitter.com/cloudflare', 'https://www.linkedin.com/company/cloudflare'], 'industry': 'Internet Infrastructure & Security', 'founded': '2009', 'headquarters': 'San Francisco, California'}
+2025-03-22 17:27:48,948 - src.app - INFO - Cleaned up file: uploads/20250322_172748_616c4a92_mock_invoice_20250322_163733_cloudflare.pdf
+2025-03-22 17:29:39,281 - invoice_processing - INFO - Starting invoice data extraction
+2025-03-22 17:29:39,281 - invoice_processing - INFO - Found invoice number: INV-20250322_163733
+2025-03-22 17:29:39,284 - invoice_processing - INFO - Found invoice date: 2025-03-22 00:00:00
+2025-03-22 17:29:39,284 - invoice_processing - INFO - Found due date: 2025-04-21 00:00:00
+2025-03-22 17:29:39,284 - invoice_processing - INFO - Found line items table header
+2025-03-22 17:29:39,285 - invoice_processing - INFO - Found total amount: $23650.0
+2025-03-22 17:29:39,285 - invoice_processing - INFO - Added remaining difference as fees: $2150.0
+2025-03-22 17:29:39,285 - invoice_processing - INFO - Successfully extracted invoice data with 4 line items
+2025-03-22 17:29:39,285 - src.app - INFO - Extracted invoice data: {'invoice_number': 'INV-20250322_163733', 'date': '2025-03-22', 'vendor_name': 'Cloudflare Inc.', 'total_amount': '23650.0', 'due_date': '2025-04-21', 'line_items': [{'description': 'Consulting Services', 'amount': '6000.0'}, {'description': 'Software Development', 'amount': '12000.0'}, {'description': 'Project Management', 'amount': '3500.0'}, {'description': 'Additional Fees', 'amount': '2150.0'}]}
+2025-03-22 17:29:39,285 - invoice_processing - INFO - Starting validation for invoice INV-20250322_163733
+2025-03-22 17:29:39,286 - invoice_processing - INFO - Validation completed. Valid: True
+2025-03-22 17:29:39,286 - src.app - INFO - Validation result: {'is_valid': True, 'errors': []}
+2025-03-22 17:29:39,286 - invoice_processing - INFO - Fetching vendor information for: Cloudflare Inc.
+2025-03-22 17:29:39,286 - invoice_processing - INFO - Found vendor information for Cloudflare Inc.
+2025-03-22 17:29:39,286 - src.app - INFO - Vendor information: {'company': 'Cloudflare Inc.', 'website': 'https://www.cloudflare.com', 'description': 'Cloudflare, Inc. is a global cloud services provider offering content delivery network services, DDoS mitigation, Internet security, and distributed domain name server services.', 'social_links': ['https://twitter.com/cloudflare', 'https://www.linkedin.com/company/cloudflare'], 'industry': 'Internet Infrastructure & Security', 'founded': '2009', 'headquarters': 'San Francisco, California'}
+2025-03-22 17:29:39,286 - src.app - INFO - Cleaned up file: uploads/20250322_172939_31de3ecb_mock_invoice_20250322_163733_cloudflare.pdf
+2025-03-22 17:30:42,523 - invoice_processing - INFO - Starting invoice data extraction
+2025-03-22 17:30:42,523 - invoice_processing - INFO - Found invoice number: INV-20250322_163733
+2025-03-22 17:30:42,524 - invoice_processing - INFO - Found invoice date: 2025-03-22 00:00:00
+2025-03-22 17:30:42,524 - invoice_processing - INFO - Found due date: 2025-04-21 00:00:00
+2025-03-22 17:30:42,524 - invoice_processing - INFO - Found line items table header
+2025-03-22 17:30:42,524 - invoice_processing - INFO - Found total amount: $23650.0
+2025-03-22 17:30:42,524 - invoice_processing - INFO - Added remaining difference as tax: $2150.0
+2025-03-22 17:30:42,524 - invoice_processing - INFO - Successfully extracted invoice data with 4 line items
+2025-03-22 17:30:42,524 - src.app - INFO - Extracted invoice data: {'invoice_number': 'INV-20250322_163733', 'date': '2025-03-22', 'vendor_name': 'Cloudflare Inc.', 'total_amount': '23650.0', 'due_date': '2025-04-21', 'line_items': [{'description': 'Consulting Services', 'amount': '6000.0'}, {'description': 'Software Development', 'amount': '12000.0'}, {'description': 'Project Management', 'amount': '3500.0'}, {'description': 'Sales Tax', 'amount': '2150.0'}]}
+2025-03-22 17:30:42,524 - invoice_processing - INFO - Starting validation for invoice INV-20250322_163733
+2025-03-22 17:30:42,524 - invoice_processing - INFO - Validation completed. Valid: True
+2025-03-22 17:30:42,525 - src.app - INFO - Validation result: {'is_valid': True, 'errors': []}
+2025-03-22 17:30:42,525 - invoice_processing - INFO - Fetching vendor information for: Cloudflare Inc.
+2025-03-22 17:30:42,525 - invoice_processing - INFO - Found vendor information for Cloudflare Inc.
+2025-03-22 17:30:42,525 - src.app - INFO - Vendor information: {'company': 'Cloudflare Inc.', 'website': 'https://www.cloudflare.com', 'description': 'Cloudflare, Inc. is a global cloud services provider offering content delivery network services, DDoS mitigation, Internet security, and distributed domain name server services.', 'social_links': ['https://twitter.com/cloudflare', 'https://www.linkedin.com/company/cloudflare'], 'industry': 'Internet Infrastructure & Security', 'founded': '2009', 'headquarters': 'San Francisco, California'}
+2025-03-22 17:30:42,525 - src.app - INFO - Cleaned up file: uploads/20250322_173042_5b0ea499_mock_invoice_20250322_163733_cloudflare.pdf
+2025-03-22 17:33:05,307 - invoice_processing - INFO - Starting invoice data extraction
+2025-03-22 17:33:05,307 - invoice_processing - INFO - Found invoice number: INV-20250322_163733
+2025-03-22 17:33:05,307 - invoice_processing - INFO - Found invoice date: 2025-03-22 00:00:00
+2025-03-22 17:33:05,307 - invoice_processing - INFO - Found due date: 2025-04-21 00:00:00
+2025-03-22 17:33:05,307 - invoice_processing - INFO - Found line items table header
+2025-03-22 17:33:05,307 - invoice_processing - INFO - Found total amount: $23650.0
+2025-03-22 17:33:05,307 - invoice_processing - INFO - Added remaining difference as tax: $2150.0
+2025-03-22 17:33:05,307 - invoice_processing - INFO - Successfully extracted invoice data with 4 line items
+2025-03-22 17:33:05,308 - src.app - INFO - Extracted invoice data: {'invoice_number': 'INV-20250322_163733', 'date': '2025-03-22', 'vendor_name': 'Cloudflare Inc.', 'total_amount': '23650.0', 'due_date': '2025-04-21', 'line_items': [{'description': 'Consulting Services', 'amount': '6000.0'}, {'description': 'Software Development', 'amount': '12000.0'}, {'description': 'Project Management', 'amount': '3500.0'}, {'description': 'Sales Tax', 'amount': '2150.0'}]}
+2025-03-22 17:33:05,308 - invoice_processing - INFO - Starting validation for invoice INV-20250322_163733
+2025-03-22 17:33:05,308 - invoice_processing - INFO - Validation completed. Valid: True
+2025-03-22 17:33:05,308 - src.app - INFO - Validation result: {'is_valid': True, 'errors': []}
+2025-03-22 17:33:05,308 - invoice_processing - INFO - Fetching vendor information for: Cloudflare Inc.
+2025-03-22 17:33:05,308 - invoice_processing - INFO - Found vendor information for Cloudflare Inc.
+2025-03-22 17:33:05,308 - src.app - INFO - Vendor information: {'company': 'Cloudflare Inc.', 'website': 'https://www.cloudflare.com', 'description': 'Cloudflare, Inc. is a global cloud services provider offering content delivery network services, DDoS mitigation, Internet security, and distributed domain name server services.', 'social_links': ['https://twitter.com/cloudflare', 'https://www.linkedin.com/company/cloudflare'], 'industry': 'Internet Infrastructure & Security', 'founded': '2009', 'headquarters': 'San Francisco, California'}
+2025-03-22 17:33:05,308 - src.app - INFO - Cleaned up file: uploads/20250322_173305_f381f503_mock_invoice_20250322_163733_cloudflare.pdf
+2025-03-22 17:36:49,787 - invoice_processing - INFO - Starting invoice data extraction
+2025-03-22 17:36:49,787 - invoice_processing - INFO - Found invoice number: INV-20250322_163733
+2025-03-22 17:36:49,788 - invoice_processing - INFO - Found invoice date: 2025-03-22 00:00:00
+2025-03-22 17:36:49,788 - invoice_processing - INFO - Found due date: 2025-04-21 00:00:00
+2025-03-22 17:36:49,788 - invoice_processing - INFO - Found line items table header
+2025-03-22 17:36:49,788 - invoice_processing - INFO - Found total amount: $23650.0
+2025-03-22 17:36:49,788 - invoice_processing - INFO - Added remaining difference as tax: $2150.0
+2025-03-22 17:36:49,789 - invoice_processing - INFO - Successfully extracted invoice data with 4 line items
+2025-03-22 17:36:49,789 - src.app - INFO - Extracted invoice data: {'invoice_number': 'INV-20250322_163733', 'date': '2025-03-22', 'vendor_name': 'Cloudflare Inc.', 'total_amount': '23650.0', 'due_date': '2025-04-21', 'line_items': [{'description': 'Consulting Services', 'amount': '6000.0'}, {'description': 'Software Development', 'amount': '12000.0'}, {'description': 'Project Management', 'amount': '3500.0'}, {'description': 'Sales Tax', 'amount': '2150.0'}]}
+2025-03-22 17:36:49,789 - invoice_processing - INFO - Starting validation for invoice INV-20250322_163733
+2025-03-22 17:36:49,789 - invoice_processing - INFO - Validation completed. Valid: True
+2025-03-22 17:36:49,789 - src.app - INFO - Validation result: {'is_valid': True, 'errors': []}
+2025-03-22 17:36:49,789 - invoice_processing - INFO - Fetching vendor information for: Cloudflare Inc.
+2025-03-22 17:36:49,789 - invoice_processing - INFO - Found vendor information for Cloudflare Inc.
+2025-03-22 17:36:49,789 - src.app - INFO - Vendor information: {'company': 'Cloudflare Inc.', 'website': 'https://www.cloudflare.com', 'description': 'Cloudflare, Inc. is a global cloud services provider offering content delivery network services, DDoS mitigation, Internet security, and distributed domain name server services.', 'social_links': ['https://twitter.com/cloudflare', 'https://www.linkedin.com/company/cloudflare'], 'industry': 'Internet Infrastructure & Security', 'founded': '2009', 'headquarters': 'San Francisco, California'}
+2025-03-22 17:36:49,790 - src.app - INFO - Cleaned up file: uploads/20250322_173649_631e4900_mock_invoice_20250322_163733_cloudflare.pdf
+2025-03-22 17:49:27,818 - invoice_processing - INFO - Starting invoice data extraction
+2025-03-22 17:49:27,818 - invoice_processing - INFO - Found invoice number: INV-20250322_163733
+2025-03-22 17:49:27,821 - invoice_processing - INFO - Found invoice date: 2025-03-22 00:00:00
+2025-03-22 17:49:27,821 - invoice_processing - INFO - Found due date: 2025-04-21 00:00:00
+2025-03-22 17:49:27,821 - invoice_processing - INFO - Found line items table header
+2025-03-22 17:49:27,821 - invoice_processing - INFO - Found total amount: $23650.0
+2025-03-22 17:49:27,821 - invoice_processing - INFO - Added remaining difference as tax: $2150.0
+2025-03-22 17:49:27,821 - invoice_processing - INFO - Successfully extracted invoice data with 4 line items
+2025-03-22 17:49:27,821 - src.app - INFO - Extracted invoice data: {'invoice_number': 'INV-20250322_163733', 'date': '2025-03-22', 'vendor_name': 'Cloudflare Inc.', 'total_amount': '23650.0', 'due_date': '2025-04-21', 'line_items': [{'description': 'Consulting Services', 'amount': '6000.0'}, {'description': 'Software Development', 'amount': '12000.0'}, {'description': 'Project Management', 'amount': '3500.0'}, {'description': 'Sales Tax', 'amount': '2150.0'}]}
+2025-03-22 17:49:27,821 - invoice_processing - INFO - Starting validation for invoice INV-20250322_163733
+2025-03-22 17:49:27,822 - invoice_processing - INFO - Validation completed. Valid: True
+2025-03-22 17:49:27,822 - src.app - INFO - Validation result: {'is_valid': True, 'errors': []}
+2025-03-22 17:49:27,822 - src.app - ERROR - Error processing invoice: 'ScrapingAgent' object has no attribute 'get_vendor_info'
+2025-03-22 17:49:27,822 - src.app - INFO - Cleaned up file: uploads/20250322_174927_9af9faf8_mock_invoice_20250322_163733_cloudflare.pdf
+2025-03-22 17:51:35,495 - invoice_processing - INFO - Starting invoice data extraction
+2025-03-22 17:51:35,496 - invoice_processing - INFO - Found invoice number: INV-20250322_163733
+2025-03-22 17:51:35,497 - invoice_processing - INFO - Found invoice date: 2025-03-22 00:00:00
+2025-03-22 17:51:35,497 - invoice_processing - INFO - Found due date: 2025-04-21 00:00:00
+2025-03-22 17:51:35,497 - invoice_processing - INFO - Found line items table header
+2025-03-22 17:51:35,497 - invoice_processing - INFO - Found total amount: $23650.0
+2025-03-22 17:51:35,497 - invoice_processing - INFO - Added remaining difference as tax: $2150.0
+2025-03-22 17:51:35,497 - invoice_processing - INFO - Successfully extracted invoice data with 4 line items
+2025-03-22 17:51:35,497 - src.app - INFO - Extracted invoice data: {'invoice_number': 'INV-20250322_163733', 'date': '2025-03-22', 'vendor_name': 'Cloudflare Inc.', 'total_amount': '23650.0', 'due_date': '2025-04-21', 'line_items': [{'description': 'Consulting Services', 'amount': '6000.0'}, {'description': 'Software Development', 'amount': '12000.0'}, {'description': 'Project Management', 'amount': '3500.0'}, {'description': 'Sales Tax', 'amount': '2150.0'}]}
+2025-03-22 17:51:35,498 - invoice_processing - INFO - Starting validation for invoice INV-20250322_163733
+2025-03-22 17:51:35,498 - invoice_processing - INFO - Validation completed. Valid: True
+2025-03-22 17:51:35,498 - src.app - INFO - Validation result: {'is_valid': True, 'errors': []}
+2025-03-22 17:51:35,498 - invoice_processing - INFO - Fetching vendor information for: Cloudflare Inc.
+2025-03-22 17:51:35,498 - invoice_processing - INFO - Found vendor information for Cloudflare Inc.
+2025-03-22 17:51:35,498 - src.app - INFO - Vendor information: {'company': 'Cloudflare Inc.', 'website': 'https://www.cloudflare.com', 'description': 'Cloudflare, Inc. is a global cloud services provider offering content delivery network services, DDoS mitigation, Internet security, and distributed domain name server services.', 'social_links': ['https://twitter.com/cloudflare', 'https://www.linkedin.com/company/cloudflare'], 'industry': 'Internet Infrastructure & Security', 'founded': '2009', 'headquarters': 'San Francisco, California'}
+2025-03-22 17:51:35,498 - invoice_processing - INFO - Generating voice notification: New valid invoice received from Cloudflare Inc. for $23650.0
+2025-03-22 17:51:35,809 - invoice_processing - ERROR - Failed to generate voice: 401 - {"detail":{"status":"detected_unusual_activity","message":"Unusual activity detected. Free Tier usage disabled. If you are using a proxy/VPN you might need to purchase a Paid Plan to not trigger our abuse detectors. Free Tier only works if users do not abuse it, for example by creating multiple free accounts. If we notice that many people try to abuse it, we will need to reconsider Free Tier altogether. \nPlease play fair and purchase any Paid Subscription to continue."}}
+2025-03-22 17:51:35,809 - src.app - INFO - Cleaned up file: uploads/20250322_175135_a755223c_mock_invoice_20250322_163733_cloudflare.pdf
+2025-03-22 18:04:14,103 - invoice_processing - INFO - Starting invoice data extraction
+2025-03-22 18:04:14,103 - invoice_processing - INFO - Found invoice number: INV-20250322_163733
+2025-03-22 18:04:14,104 - invoice_processing - INFO - Found invoice date: 2025-03-22 00:00:00
+2025-03-22 18:04:14,104 - invoice_processing - INFO - Found due date: 2025-04-21 00:00:00
+2025-03-22 18:04:14,104 - invoice_processing - INFO - Found line items table header
+2025-03-22 18:04:14,104 - invoice_processing - INFO - Found total amount: $23650.0
+2025-03-22 18:04:14,104 - invoice_processing - INFO - Added remaining difference as tax: $2150.0
+2025-03-22 18:04:14,104 - invoice_processing - INFO - Successfully extracted invoice data with 4 line items
+2025-03-22 18:04:14,104 - src.app - INFO - Extracted invoice data: {'invoice_number': 'INV-20250322_163733', 'date': '2025-03-22', 'vendor_name': 'Cloudflare Inc.', 'total_amount': '23650.0', 'due_date': '2025-04-21', 'line_items': [{'description': 'Consulting Services', 'amount': '6000.0'}, {'description': 'Software Development', 'amount': '12000.0'}, {'description': 'Project Management', 'amount': '3500.0'}, {'description': 'Sales Tax', 'amount': '2150.0'}]}
+2025-03-22 18:04:14,104 - invoice_processing - INFO - Starting validation for invoice INV-20250322_163733
+2025-03-22 18:04:14,105 - invoice_processing - INFO - Validation completed. Valid: True
+2025-03-22 18:04:14,105 - src.app - INFO - Validation result: {'is_valid': True, 'errors': []}
+2025-03-22 18:04:14,105 - invoice_processing - INFO - Fetching vendor information for: Cloudflare Inc.
+2025-03-22 18:04:14,105 - invoice_processing - INFO - Found vendor information for Cloudflare Inc.
+2025-03-22 18:04:14,105 - src.app - INFO - Vendor information: {'company': 'Cloudflare Inc.', 'website': 'https://www.cloudflare.com', 'description': 'Cloudflare, Inc. is a global cloud services provider offering content delivery network services, DDoS mitigation, Internet security, and distributed domain name server services.', 'social_links': ['https://twitter.com/cloudflare', 'https://www.linkedin.com/company/cloudflare'], 'industry': 'Internet Infrastructure & Security', 'founded': '2009', 'headquarters': 'San Francisco, California'}
+2025-03-22 18:04:14,105 - invoice_processing - INFO - Generating voice notification: New valid invoice received from Cloudflare Inc. for $23650.0
+2025-03-22 18:04:14,335 - invoice_processing - ERROR - Failed to generate voice: 401 - {"detail":{"status":"detected_unusual_activity","message":"Unusual activity detected. Free Tier usage disabled. If you are using a proxy/VPN you might need to purchase a Paid Plan to not trigger our abuse detectors. Free Tier only works if users do not abuse it, for example by creating multiple free accounts. If we notice that many people try to abuse it, we will need to reconsider Free Tier altogether. \nPlease play fair and purchase any Paid Subscription to continue."}}
+2025-03-22 18:04:14,336 - src.app - INFO - Cleaned up file: uploads/20250322_180414_cbf37114_mock_invoice_20250322_163733_cloudflare.pdf
+2025-03-22 18:08:36,497 - invoice_processing - INFO - Starting invoice data extraction
+2025-03-22 18:08:36,497 - invoice_processing - INFO - Found invoice number: INV-20250322_163733
+2025-03-22 18:08:36,499 - invoice_processing - INFO - Found invoice date: 2025-03-22 00:00:00
+2025-03-22 18:08:36,499 - invoice_processing - INFO - Found due date: 2025-04-21 00:00:00
+2025-03-22 18:08:36,499 - invoice_processing - INFO - Found line items table header
+2025-03-22 18:08:36,499 - invoice_processing - INFO - Found total amount: $23650.0
+2025-03-22 18:08:36,499 - invoice_processing - INFO - Added remaining difference as tax: $2150.0
+2025-03-22 18:08:36,499 - invoice_processing - INFO - Successfully extracted invoice data with 4 line items
+2025-03-22 18:08:36,499 - src.app - INFO - Extracted invoice data: {'invoice_number': 'INV-20250322_163733', 'date': '2025-03-22', 'vendor_name': 'Cloudflare Inc.', 'total_amount': '23650.0', 'due_date': '2025-04-21', 'line_items': [{'description': 'Consulting Services', 'amount': '6000.0'}, {'description': 'Software Development', 'amount': '12000.0'}, {'description': 'Project Management', 'amount': '3500.0'}, {'description': 'Sales Tax', 'amount': '2150.0'}]}
+2025-03-22 18:08:36,499 - invoice_processing - INFO - Starting validation for invoice INV-20250322_163733
+2025-03-22 18:08:36,500 - invoice_processing - INFO - Validation completed. Valid: True
+2025-03-22 18:08:36,500 - src.app - INFO - Validation result: {'is_valid': True, 'errors': []}
+2025-03-22 18:08:36,500 - invoice_processing - INFO - Fetching vendor information for: Cloudflare Inc.
+2025-03-22 18:08:36,500 - invoice_processing - INFO - Found vendor information for Cloudflare Inc.
+2025-03-22 18:08:36,500 - src.app - INFO - Vendor information: {'company': 'Cloudflare Inc.', 'website': 'https://www.cloudflare.com', 'description': 'Cloudflare, Inc. is a global cloud services provider offering content delivery network services, DDoS mitigation, Internet security, and distributed domain name server services.', 'social_links': ['https://twitter.com/cloudflare', 'https://www.linkedin.com/company/cloudflare'], 'industry': 'Internet Infrastructure & Security', 'founded': '2009', 'headquarters': 'San Francisco, California'}
+2025-03-22 18:08:36,500 - invoice_processing - INFO - Generating voice notification: New valid invoice received from Cloudflare Inc. for $23650.0
+2025-03-22 18:08:37,700 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2025-03-22 18:08:38,411 - invoice_processing - INFO - Voice notification saved to static/audio/notification_20250322_180838.mp3
+2025-03-22 18:08:38,413 - src.app - INFO - Generated voice notification: /static/audio/notification_20250322_180838.mp3
+2025-03-22 18:08:38,413 - src.app - INFO - Cleaned up file: uploads/20250322_180836_b6dd21b8_mock_invoice_20250322_163733_cloudflare.pdf
+2025-03-22 18:10:14,756 - invoice_processing - INFO - Starting invoice data extraction
+2025-03-22 18:10:14,757 - invoice_processing - INFO - Found invoice number: INV-20250322_163733
+2025-03-22 18:10:14,757 - invoice_processing - INFO - Found invoice date: 2025-03-22 00:00:00
+2025-03-22 18:10:14,757 - invoice_processing - INFO - Found due date: 2025-04-21 00:00:00
+2025-03-22 18:10:14,757 - invoice_processing - INFO - Found line items table header
+2025-03-22 18:10:14,757 - invoice_processing - INFO - Found total amount: $23650.0
+2025-03-22 18:10:14,757 - invoice_processing - INFO - Added remaining difference as tax: $2150.0
+2025-03-22 18:10:14,757 - invoice_processing - INFO - Successfully extracted invoice data with 4 line items
+2025-03-22 18:10:14,757 - src.app - INFO - Extracted invoice data: {'invoice_number': 'INV-20250322_163733', 'date': '2025-03-22', 'vendor_name': 'Cloudflare Inc.', 'total_amount': '23650.0', 'due_date': '2025-04-21', 'line_items': [{'description': 'Consulting Services', 'amount': '6000.0'}, {'description': 'Software Development', 'amount': '12000.0'}, {'description': 'Project Management', 'amount': '3500.0'}, {'description': 'Sales Tax', 'amount': '2150.0'}]}
+2025-03-22 18:10:14,758 - invoice_processing - INFO - Starting validation for invoice INV-20250322_163733
+2025-03-22 18:10:14,758 - invoice_processing - INFO - Validation completed. Valid: True
+2025-03-22 18:10:14,758 - src.app - INFO - Validation result: {'is_valid': True, 'errors': []}
+2025-03-22 18:10:14,758 - invoice_processing - INFO - Fetching vendor information for: Cloudflare Inc.
+2025-03-22 18:10:14,758 - invoice_processing - INFO - Found vendor information for Cloudflare Inc.
+2025-03-22 18:10:14,758 - src.app - INFO - Vendor information: {'company': 'Cloudflare Inc.', 'website': 'https://www.cloudflare.com', 'description': 'Cloudflare, Inc. is a global cloud services provider offering content delivery network services, DDoS mitigation, Internet security, and distributed domain name server services.', 'social_links': ['https://twitter.com/cloudflare', 'https://www.linkedin.com/company/cloudflare'], 'industry': 'Internet Infrastructure & Security', 'founded': '2009', 'headquarters': 'San Francisco, California'}
+2025-03-22 18:10:14,758 - invoice_processing - INFO - Generating voice notification: New valid invoice received from Cloudflare Inc. for $23650.0
+2025-03-22 18:10:16,035 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2025-03-22 18:10:16,814 - invoice_processing - INFO - Voice notification saved to static/audio/notification_20250322_181016.mp3
+2025-03-22 18:10:16,814 - src.app - INFO - Generated voice notification: /static/audio/notification_20250322_181016.mp3
+2025-03-22 18:10:16,814 - src.app - INFO - Cleaned up file: uploads/20250322_181014_330f1a6f_mock_invoice_20250322_163733_cloudflare.pdf
+2025-03-22 18:35:25,492 - invoice_processing - INFO - Starting invoice data extraction
+2025-03-22 18:35:25,492 - invoice_processing - INFO - Found invoice number: INV-20250322_163733
+2025-03-22 18:35:25,494 - invoice_processing - INFO - Found invoice date: 2025-03-22 00:00:00
+2025-03-22 18:35:25,494 - invoice_processing - INFO - Found due date: 2025-04-21 00:00:00
+2025-03-22 18:35:25,494 - invoice_processing - INFO - Found line items table header
+2025-03-22 18:35:25,494 - invoice_processing - INFO - Found total amount: $23650.0
+2025-03-22 18:35:25,494 - invoice_processing - INFO - Added remaining difference as tax: $2150.0
+2025-03-22 18:35:25,494 - invoice_processing - INFO - Successfully extracted invoice data with 4 line items
+2025-03-22 18:35:25,494 - src.app - INFO - Extracted invoice data: {'invoice_number': 'INV-20250322_163733', 'date': '2025-03-22', 'vendor_name': 'Cloudflare Inc.', 'total_amount': '23650.0', 'due_date': '2025-04-21', 'line_items': [{'description': 'Consulting Services', 'amount': '6000.0'}, {'description': 'Software Development', 'amount': '12000.0'}, {'description': 'Project Management', 'amount': '3500.0'}, {'description': 'Sales Tax', 'amount': '2150.0'}]}
+2025-03-22 18:35:25,494 - invoice_processing - INFO - Starting validation for invoice INV-20250322_163733
+2025-03-22 18:35:25,494 - invoice_processing - INFO - Validation completed. Valid: True
+2025-03-22 18:35:25,494 - src.app - INFO - Validation result: {'is_valid': True, 'errors': []}
+2025-03-22 18:35:25,494 - invoice_processing - INFO - Fetching vendor information for: Cloudflare Inc.
+2025-03-22 18:35:25,494 - invoice_processing - INFO - Found vendor information for Cloudflare Inc.
+2025-03-22 18:35:25,494 - src.app - INFO - Vendor information: {'company': 'Cloudflare Inc.', 'website': 'https://www.cloudflare.com', 'description': 'Cloudflare, Inc. is a global cloud services provider offering content delivery network services, DDoS mitigation, Internet security, and distributed domain name server services.', 'social_links': ['https://twitter.com/cloudflare', 'https://www.linkedin.com/company/cloudflare'], 'industry': 'Internet Infrastructure & Security', 'founded': '2009', 'headquarters': 'San Francisco, California'}
+2025-03-22 18:35:25,494 - invoice_processing - INFO - Generating voice notification: New valid invoice received from Cloudflare Inc. for $23650.0
+2025-03-22 18:35:26,804 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2025-03-22 18:35:27,239 - invoice_processing - INFO - Voice notification saved to static/audio/notification_20250322_183527.mp3
+2025-03-22 18:35:27,239 - src.app - INFO - Generated voice notification: /static/audio/notification_20250322_183527.mp3
+2025-03-22 18:35:27,239 - src.app - INFO - Cleaned up file: uploads/20250322_183525_da8733f6_mock_invoice_20250322_163733_cloudflare.pdf
