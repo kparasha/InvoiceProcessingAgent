@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Processing System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    
+    <!-- Twitter conversion tracking base code -->
+    <script>
+    !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+    },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+    a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+    twq('config','pmaca');
+    </script>
+    <!-- End Twitter conversion tracking base code -->
+</head>
+<body>
+    <div class="hero">
+        <h1>Invoice Processing System</h1>
+        <p>Upload your invoice PDF and let our AI extract and validate the information for you.</p>
+    </div>
+
+    <div class="container">
+        <div class="upload-section">
+            <form id="uploadForm" enctype="multipart/form-data">
+                <div class="drop-zone" id="dropZone">
+                    <div class="drop-zone-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        <p>Drag and drop your invoice PDF here or click to browse</p>
+                    </div>
+                    <input type="file" id="fileInput" class="file-input" accept=".pdf">
+                </div>
+                <div id="selectedFile" class="selected-file hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                        <polyline points="13 2 13 9 20 9"></polyline>
+                    </svg>
+                    <span id="fileName"></span>
+                    <button type="button" id="removeFile" class="button">Remove</button>
+                </div>
+                <div style="text-align: center; margin-top: 1rem;">
+                    <button type="submit" id="processButton" class="button button-primary" disabled>
+                        <span class="spinner hidden"></span>
+                        Process Invoice
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div id="resultsSection" class="results-section hidden">
+            <div class="results-grid">
+                <div class="result-card">
+                    <h3>PDF Information</h3>
+                    <div id="pdfInfo" class="extracted-info-grid"></div>
+                </div>
+                <div class="result-card">
+                    <h3>Vendor Information</h3>
+                    <div id="vendorInfo" class="vendor-details-grid"></div>
+                </div>
+                <div class="result-card">
+                    <h3>Extracted Information</h3>
+                    <div id="extractedInfo" class="extracted-info-grid"></div>
+                </div>
+            </div>
+
+            <div class="result-card">
+                <h3>Line Items</h3>
+                <div id="lineItems">
+                    <table class="line-items-table">
+                        <thead>
+                            <tr>
+                                <th>Description</th>
+                                <th>Quantity</th>
+                                <th>Unit Price</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="lineItemsBody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="result-card">
+                <h3>Validation Results</h3>
+                <div id="validationResults" class="validation-results"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="toastContainer" class="toast-container"></div>
+    <div id="voiceNotification" class="voice-notification hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+            <line x1="12" y1="19" x2="12" y2="23"></line>
+            <line x1="8" y1="23" x2="16" y2="23"></line>
+        </svg>
+        <span id="voiceMessage">Click to listen to the summary</span>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html> 
